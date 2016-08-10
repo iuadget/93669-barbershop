@@ -8,7 +8,7 @@
 <header class="main-header">
   <div class="container">
     <nav class="main-navigation">
-      <img src="img/logo.jpg" width="220" height="165" alt="Главная">
+      <a href="#"><img src="img/logo.jpg" width="220" height="165" alt="Главная"></a>
       <ul>
         <li><a href="#">Информация</a></li>
         <li><a href="#">Новости</a></li>
@@ -32,8 +32,8 @@
       </ul>
   </section>
   <div class="shop-content">
-    <div>
-      <form action="/echo" method="post">
+    <div class="filter-area">
+      <form class="filter" action="/echo" method="post">
         <fieldset>
           <h2>Производители</h2>
           <input type="checkbox" name="baxter" id="baxter-item" checked>
@@ -48,6 +48,8 @@
           <label for="murray-item">murray's'</label><br>
           <input type="checkbox" name="american crew" id="american-crew-item" checked>
           <label for="american-crew-item">american crew</label><br>
+        </fieldset>
+        <fieldset>
           <h2>Группы товаров:</h2>
           <input type="radio" name="group-items" id="group-items-1">
           <label for="group-items-1">Бритвенные принадлежности</label><br>
@@ -61,83 +63,94 @@
     </div>
     <div class="catalog">
       <article class="item-shop">
-        <figure>
+        <a href="#">
           <img src="img/220*165.png" width="220" height="165" alt="Товар-1">
-        </figure>
+        </a>
         <p class='product-preview-title'>
           <a href='#' class='product-preview-link'>
             <span class='product-preview-category'>Набор для путешествий</span>
             <span class='product-preview-name'>Baxter of california</span>
           </a>
         </p>
-        <div class="price-item">2 900 руб.</div>
-        <button class="btn btn-shop">Купить</button>
+        <p class="price-item">
+          <a href="#">2 900 руб.</a>
+          <span class="btn btn-shop">Купить</span>
+        </p>
       </article>
       <article class="item-shop">
-        <figure>
+        <a href="#">
           <img src="img/220*165.png" width="220" height="165" alt="Товар-2">
-        </figure>
+        </a>
         <p class='product-preview-title'>
           <a href='#' class='product-preview-link'>
             <span class='product-preview-category'>Увлажняющий кондиционер</span>
             <span class='product-preview-name'>Baxter of california</span>
           </a>
         </p>
-        <div class="price-item">750 руб.</div>
-        <button class="btn btn-shop">Купить</button>
-      </article>
+        <p class="price-item">
+          <a href="#">750 руб.</a>
+          <span class="btn btn-shop">Купить</span>
+        </p>      </article>
       <article class="item-shop">
-          <figure>
+          <a href="#">
             <img src="img/220*165.png" width="220" height="165" alt="Товар-3">
-          </figure>
+          </a>
           <p class='product-preview-title'>
             <a href='#' class='product-preview-link'>
               <span class='product-preview-category'>Гель для волос</span>
               <span class='product-preview-name'>Sauvecito</span>
             </a>
           </p>
-          <div class="price-item">290 руб.</div>
-          <button class="btn btn-shop">Купить</button>
-      </article>
+          <p class="price-item">
+            <a href="#">290 руб.</a>
+            <span class="btn btn-shop">Купить</span>
+          </p>
+        </article>
       <article class="item-shop">
-          <figure>
+          <a href="#">
             <img src="img/220*165.png" width="220" height="165" alt="Товар-4">
-          </figure>
+          </a>
           <p class='product-preview-title'>
             <a href='#' class='product-preview-link'>
               <span class='product-preview-category'>Глина для укладки волос</span>
               <span class='product-preview-name'>American crew</span>
             </a>
           </p>
-          <div class="price-item">500 руб.</div>
-          <button class="btn btn-shop">Купить</button>
-      </article>
+          <p class="price-item">
+            <a href="#">500 руб.</a>
+            <span class="btn btn-shop">Купить</span>
+          </p>
+        </article>
       <article class="item-shop">
-          <figure>
+          <a href="#">
             <img src="img/220*165.png" width="220" height="165" alt="Товар-5">
-          </figure>
+          </a>
           <p class='product-preview-title'>
             <a href='#' class='product-preview-link'>
               <span class='product-preview-category'>Гель для волос</span>
               <span class='product-preview-name'>American crew</span>
             </a>
           </p>
-          <div class="price-item">300 руб.</div>
-          <button class="btn btn-shop">Купить</button>
-      </article>
+          <p class="price-item">
+            <a href="#">300 руб.</a>
+            <span class="btn btn-shop">Купить</span>
+          </p>
+        </article>
       <article class="item-shop">
-          <figure>
+          <a href="#">
             <img src="img/220*165.png" width="220" height="165" alt="Товар-6">
-          </figure>
+          </a>
           <p class='product-preview-title'>
             <a href='#' class='product-preview-link'>
               <span class='product-preview-category'>Набор для бритья</span>
               <span class='product-preview-name'>Baxter of california</span>
             </a>
           </p>
-          <div class="price-item">3 900 руб.</div>
-          <button class="btn btn-shop">Купить</button>
-      </article>
+          <p class="price-item">
+            <a href="#">3 900 руб.</a>
+            <span class="btn btn-shop">Купить</span>
+          </p>
+              </article>
       </div>
     </div>
       <ul class="pagination">
