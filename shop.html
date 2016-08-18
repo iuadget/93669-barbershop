@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>Барбершоп "Бородинский"</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
   <header class="main-header">
-    <div class="container">
+    <div class="container clearfix">
       <nav class="main-navigation">
-        <a href="#"><img src="img/barbershop-logo.png" width="220" height="165" alt="Главная"></a>
+        <a href="#"><img src="img/barbershop-logo.png" alt="Главная"></a>
         <ul>
           <li><a href="#">Информация</a></li>
           <li><a href="#">Новости</a></li>
@@ -25,17 +23,17 @@
       </div>
     </div>
   </header>
-  <div class="container">
-    <section class="content-head">
-      <h1>Средства для ухода</h1>
+  <div class="container clearfix">
+    <h1>Средства для ухода</h1>
+    <section class="breadcrumbs">
       <ul>
         <li><a href="#">Главная</a></li>
         <li><a href="#">Магазин</a></li>
-        <li>Средства для ухода</li>
+        <li><a href="#">Средства для ухода</a></li>
       </ul>
     </section>
     <div class="shop-content">
-      <div class="filter-area">
+      <div class="filter-area clerafix">
         <form class="filter" action="/echo" method="post">
           <fieldset>
             <h2>Производители</h2>
@@ -73,127 +71,127 @@
           </fieldset>
         </form>
       </div>
-      <div class="catalog">
-        <article class="item-shop">
-          <a href="#">
-            <img src="img/good-1.jpg" width="220" height="165" alt="Товар-1">
+    </div>
+    <div class="catalog clearfix">
+      <article class="item-shop">
+        <a href="#">
+          <img src="img/good-1.jpg" width="220" height="165" alt="Товар-1">
+        </a>
+        <p class='product-preview-title'>
+          <a href='#' class='product-preview-link'>
+            <span class='product-preview-category'>Набор для путешествий</span>
+            <span class='product-preview-name'>Baxter of california</span>
           </a>
-          <p class='product-preview-title'>
-            <a href='#' class='product-preview-link'>
-              <span class='product-preview-category'>Набор для путешествий</span>
-              <span class='product-preview-name'>Baxter of california</span>
-            </a>
-          </p>
-          <p class="price-item">
-            <a href="#">2 900 руб.</a>
-            <span class="btn btn-shop">Купить</span>
-          </p>
-        </article>
-        <article class="item-shop">
-          <a href="#">
-            <img src="img/good-2.jpg" width="220" height="165" alt="Товар-2">
+        </p>
+        <p class="price-item">
+          <a href="#">2 900 руб.</a>
+          <span class="btn btn-shop">Купить</span>
+        </p>
+      </article>
+      <article class="item-shop">
+        <a href="#">
+          <img src="img/good-2.jpg" width="220" height="165" alt="Товар-2">
+        </a>
+        <p class='product-preview-title'>
+          <a href='#' class='product-preview-link'>
+            <span class='product-preview-category'>Увлажняющий кондиционер</span>
+            <span class='product-preview-name'>Baxter of california</span>
           </a>
-          <p class='product-preview-title'>
-            <a href='#' class='product-preview-link'>
-              <span class='product-preview-category'>Увлажняющий кондиционер</span>
-              <span class='product-preview-name'>Baxter of california</span>
-            </a>
-          </p>
-          <p class="price-item">
-            <a href="#">750 руб.</a>
-            <span class="btn btn-shop">Купить</span>
-          </p>
-        </article>
-        <article class="item-shop">
-          <a href="#">
-            <img src="img/good-3.jpg" width="220" height="165" alt="Товар-3">
+        </p>
+        <p class="price-item">
+          <a href="#">750 руб.</a>
+          <span class="btn btn-shop">Купить</span>
+        </p>
+      </article>
+      <article class="item-shop">
+        <a href="#">
+          <img src="img/good-3.jpg" width="220" height="165" alt="Товар-3">
+        </a>
+        <p class='product-preview-title'>
+          <a href='#' class='product-preview-link'>
+            <span class='product-preview-category'>Гель для волос</span>
+            <span class='product-preview-name'>Sauvecito</span>
           </a>
-          <p class='product-preview-title'>
-            <a href='#' class='product-preview-link'>
-              <span class='product-preview-category'>Гель для волос</span>
-              <span class='product-preview-name'>Sauvecito</span>
-            </a>
-          </p>
-          <p class="price-item">
-            <a href="#">290 руб.</a>
-            <span class="btn btn-shop">Купить</span>
-          </p>
-        </article>
-        <article class="item-shop">
-          <a href="#">
-            <img src="img/good-4.jpg" width="220" height="165" alt="Товар-4">
+        </p>
+        <p class="price-item">
+          <a href="#">290 руб.</a>
+          <span class="btn btn-shop">Купить</span>
+        </p>
+      </article>
+      <article class="item-shop">
+        <a href="#">
+          <img src="img/good-4.jpg" width="220" height="165" alt="Товар-4">
+        </a>
+        <p class='product-preview-title'>
+          <a href='#' class='product-preview-link'>
+            <span class='product-preview-category'>Глина для укладки волос</span>
+            <span class='product-preview-name'>American crew</span>
           </a>
-          <p class='product-preview-title'>
-            <a href='#' class='product-preview-link'>
-              <span class='product-preview-category'>Глина для укладки волос</span>
-              <span class='product-preview-name'>American crew</span>
-            </a>
-          </p>
-          <p class="price-item">
-            <a href="#">500 руб.</a>
-            <span class="btn btn-shop">Купить</span>
-          </p>
-        </article>
-        <article class="item-shop">
-          <a href="#">
-            <img src="img/good-5.jpg" width="220" height="165" alt="Товар-5">
+        </p>
+        <p class="price-item">
+          <a href="#">500 руб.</a>
+          <span class="btn btn-shop">Купить</span>
+        </p>
+      </article>
+      <article class="item-shop">
+        <a href="#">
+          <img src="img/good-5.jpg" width="220" height="165" alt="Товар-5">
+        </a>
+        <p class='product-preview-title'>
+          <a href='#' class='product-preview-link'>
+            <span class='product-preview-category'>Гель для волос</span>
+            <span class='product-preview-name'>American crew</span>
           </a>
-          <p class='product-preview-title'>
-            <a href='#' class='product-preview-link'>
-              <span class='product-preview-category'>Гель для волос</span>
-              <span class='product-preview-name'>American crew</span>
-            </a>
-          </p>
-          <p class="price-item">
-            <a href="#">300 руб.</a>
-            <span class="btn btn-shop">Купить</span>
-          </p>
-        </article>
-        <article class="item-shop">
-          <a href="#">
-            <img src="img/good-6.jpg" width="220" height="165" alt="Товар-6">
+        </p>
+        <p class="price-item">
+          <a href="#">300 руб.</a>
+          <span class="btn btn-shop">Купить</span>
+        </p>
+      </article>
+      <article class="item-shop">
+        <a href="#">
+          <img src="img/good-6.jpg" width="220" height="165" alt="Товар-6">
+        </a>
+        <p class='product-preview-title'>
+          <a href='#' class='product-preview-link'>
+            <span class='product-preview-category'>Набор для бритья</span>
+            <span class='product-preview-name'>Baxter of california</span>
           </a>
-          <p class='product-preview-title'>
-            <a href='#' class='product-preview-link'>
-              <span class='product-preview-category'>Набор для бритья</span>
-              <span class='product-preview-name'>Baxter of california</span>
-            </a>
-          </p>
-          <p class="price-item">
-            <a href="#">3 900 руб.</a>
-            <span class="btn btn-shop">Купить</span>
-          </p>
-        </article>
+        </p>
+        <p class="price-item">
+          <a href="#">3 900 руб.</a>
+          <span class="btn btn-shop">Купить</span>
+        </p>
+      </article>
+      <div class="pagination">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
       </div>
     </div>
-    <ul class="pagination">
-      <li><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-    </ul>
-    <footer class="main-footer">
-      <div class="container">
-        <section class="footer-contacts">
-          <p>
-            Барбершоп "Бородинский"
-            <br> Адрес: г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
-            <br>
-            <a class="find" href="#">Как нас найти?</a>
-            <br> телефон: +7 (812) 666-02-66
-          </p>
-        </section>
-        <section class="footer-social">
-          <p>Давайте дружить!</p>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </section>
-        <section class="footer-copyright">
-          <a class="btn" href="https://htmlacademy.ru/">HTML Academy</a>
-        </section>
-      </div>
-    </footer>
+  </div>
+  <footer class="main-footer">
+    <div class="container clerfix">
+      <section class="footer-contacts">
+        <p>
+          Барбершоп "Бородинский"
+          <br> Адрес: г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
+          <br>
+          <a class="find" href="#">Как нас найти?</a>
+          <br> телефон: +7 (812) 666-02-66
+        </p>
+      </section>
+      <section class="footer-social">
+        <p>Давайте дружить!</p>
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </section>
+      <section class="footer-copyright">
+        <a class="btn" href="https://htmlacademy.ru/">HTML Academy</a>
+      </section>
+    </div>
+  </footer>
 </body>
-
 </html>
