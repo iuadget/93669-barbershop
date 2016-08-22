@@ -4,13 +4,18 @@
   <meta charset="utf-8">
   <title>Барбершоп "Бородинский"</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <header class="main-header">
     <div class="container clearfix">
       <nav class="main-navigation">
-        <a href="#"><img src="img/barbershop-logo.png" alt="Главная"></a>
         <ul>
+          <li>
+            <div class="catalog-item-logo">
+            <a href="#"><img src="img/barbershop-logo.jpg" width="111" height="24" alt="Главная"></a>
+          </div>
+          </li>
           <li><a href="#">Информация</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Прайс-лист</a></li>
@@ -24,15 +29,16 @@
     </div>
   </header>
   <div class="container clearfix">
+    <section class="content-heading">
     <h1>Средства для ухода</h1>
-    <section class="breadcrumbs">
-      <ul>
+      <ul class="breadcrumbs">
         <li><a href="#">Главная</a></li>
         <li><a href="#">Магазин</a></li>
-        <li><a href="#">Средства для ухода</a></li>
+        <li>Средства для ухода</li>
       </ul>
     </section>
-    <div class="shop-content">
+
+    <div class="shop-content clearfix">
       <div class="filter-area clerafix">
         <form class="filter" action="/echo" method="post">
           <fieldset>
@@ -71,8 +77,11 @@
           </fieldset>
         </form>
       </div>
+
     </div>
-    <div class="catalog clearfix">
+
+    <div class="catalog">
+      <!--  убрать лишние пробелы и отступы, убрать размер шрифта-->
       <article class="item-shop">
         <a href="#">
           <img src="img/good-1.jpg" width="220" height="165" alt="Товар-1">

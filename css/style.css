@@ -47,43 +47,74 @@ h2 {
   display: table;
   clear: both;
 }
-.breadcrumbs-item{
-	width: 620px;
-	/*outline: 2px solid blue;*/
-	min-height: 70px;
-	margin-bottom: 60px;
+.content-heading h1{
+margin: 0;
+margin-bottom: 20px;
+padding: 0;
+font-size: 30px;
+line-height: 42px;
 }
-.breadcrumbs{
-	width: 300px;
-	min-height: 70px;
-	padding: 0 10px;
-	/*outline: 2px solid green;*/
-	margin-bottom: 60px;
+.content-heading .breadcrumbs{
+margin: 0;
+padding: 0;
+list-style: none;
 }
-.breadcrumbs-item ul li,
-.breadcrumbs ul li{
-	display: inline-block;
+.breadcrumbs li{
+position: relative;
+display: inline;
+padding-right: 40px;
+}
+.content-heading .breadcrumbs li::after{
+content: "";
+position: absolute;
+top: 6px;
+right: 15px;
+width: 8px;
+height: 8px;
+background: #000;
+transform: rotate(45deg);
+}
+.breadcrumbs a{
+text-decoration: none;
+color: #000;
+}
+.breadcrumbs a:hover{
+text-decoration: underline;
+}
+.breadcrumbs .current{
+color: #aba9a7;
+}
+.breadcrumbs .current::after{
+display: none;
 }
 
 .catalog{
-	/*outline: 2px solid red;*/
-	float: right;
-	width: 700px;
-	min-height: 685px;
-	margin-bottom: 50px;
+float: right;
+width: 720px;
+margin: 0;
+padding: 0;
+margin-bottom: 45px;
 }
-.item-shop {
-  display: inline-block;
-	width: 220px;
-	min-height: 290px;
-	margin-left: 20px;
-	/*outline: 2px solid green;*/
-	vertical-align: top;
-	margin-bottom: 20px;
+.item-shop{
+display: inline-block;
+vertical-align: top;
+width: 220px;
+margin-right: 20px;
+margin-bottom: 20px;
 }
-.item-shop:first-child{
-	margin-left: 0px;
+.item-shop:nth-child(3n){
+margin-right: 0;
 }
+.item-shop p{
+margin: 0;
+padding: 0;
+padding-left: 15px;
+padding-bottom: 15px;
+font-size: 14px;
+line-height: 18px;
+text-transform: none;
+}
+
 .pagination{
 	width: 220px;
 	min-height: 45px;
@@ -92,15 +123,26 @@ h2 {
 }
 .item-left{
 	float: left;
-	min-height: 670px;
-	width: 460px;
-	/*outline: 2px solid green;*/
 }
+
+.item-left-column-big{
+height: 498px;
+margin-bottom: 20px;
+}
+.item-left-column{
+display: inline-block;
+vertical-align: top;
+height: 149px;
+margin-right: 20px;
+}
+.item-left-column:nth-child(4){
+margin-right: 0;
+}
+
 .item-right{
 	float: right;
-	max-height: 505px;
-	width: 390px;
-	/*outline: 2px solid yellow;*/
+	width: 378px;
+	margin-left: 90px;
 }
 .shop-content{
 	float: left;
@@ -112,7 +154,6 @@ h2 {
 	margin-top: 60px;
 	padding-bottom: 40px;
 	padding-top: 60px;
-	/*outline: 2px solid blue;*/
 	min-height: 190px;
 }
 .footer-contacts {
